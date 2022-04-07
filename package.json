@@ -1,17 +1,33 @@
 {
   "name": "line-swissknife",
   "version": "0.0.0",
-  "private": true,
+  "repository": "git@github.com:taichunmin/line-swissknife.git",
+  "author": "taichunmin <taichunmin@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www"
+    "lint": "eslint --ext .js,.pug --fix .",
+    "ngrok": "ngrok http 3000",
+    "start": "node ./bin/www.js"
   },
   "dependencies": {
+    "@line/bot-sdk": "~7.4.0",
+    "axios": "~0.26.1",
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "node-sass-middleware": "0.11.0",
-    "pug": "2.0.0-beta11"
+    "cross-env": "~7.0.3",
+    "debug": "~4.3.4",
+    "dotenv": "~16.0.0",
+    "express": "~4.17.3",
+    "http-errors": "~2.0.0",
+    "lodash": "~4.17.21",
+    "morgan": "~1.10.0",
+    "pug": "~3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "~8.12.0",
+    "eslint-config-standard": "~16.0.3",
+    "eslint-plugin-import": "~2.26.0",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-promise": "~6.0.0",
+    "eslint-plugin-pug": "~1.2.4"
   }
 }
